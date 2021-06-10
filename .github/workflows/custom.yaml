@@ -23,3 +23,20 @@ jobs:
       run: |
         echo "This step just fails."
         exit 1
+  my_second_job:
+    name: Here's another job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Steppety step
+      run: |
+        echo "wow, so many groups"
+        echo "::group::Here's a group"
+        echo "It has some output"
+        echo "::endgroup::"
+        echo "::group::Here's another group"
+        echo "It has some output"
+        echo "::endgroup::"
+        echo "::group::There's even a third group"
+        echo "::warning::This group has a warning"
+        echo "::endgroup::"
+        echo "Goodbye."
