@@ -1,7 +1,6 @@
 "Label 1":
   - any:
     - dir_a/**/*
-    all:
     - "!dir_a/dir_b/file.txt"
 "Label 2":
   - file.txt
