@@ -19,3 +19,7 @@ jobs:
         echo "::warning::and even a warning"
         echo "::endgroup::"
         echo "Goodbye."
+    - name: The second step
+      run: |
+        echo "This step just fails."
+        exit 1
