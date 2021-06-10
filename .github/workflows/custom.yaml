@@ -1,0 +1,21 @@
+name: 'Custom action with various output'
+on:
+  - pull_request_target
+
+jobs:
+  my_first_job:
+    name: My custom job
+    runs-on: ubuntu-latest
+    steps:
+    - name: The first step
+      run: |
+        echo "hello world"
+        echo "::warning::This is a warning"
+        echo "::error::This is an error"
+        echo "::debug::This is a debug message"
+        echo "::group::Look at this group right here"
+        echo "It has some output"
+        echo "::debug::and some debug strings"
+        echo "::warning::and even a warning"
+        echo "::endgroup::"
+        echo "Goodbye."
