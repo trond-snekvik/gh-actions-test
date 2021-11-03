@@ -3,3 +3,7 @@
   - "!dir_a/dir_b/file.txt"
 "Label 2":
   - file.txt
+"Label 3": 
+  - any:
+    - dir_a/**/*
+    - file.txt
